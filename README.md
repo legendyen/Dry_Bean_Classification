@@ -45,7 +45,16 @@ The dataset used includes images of seven types of dry beans:
 ![image](https://github.com/user-attachments/assets/d231a94e-10cd-4c53-b0b0-64924cbde95b)
 - **Deep Learning** models using multi-layer perceptrons, combined with logistic regression, achieved further improvements in accuracy.
 - **Cross-validation** and **early stopping** were effective in preventing overfitting, resulting in a model that generalizes well to unseen data.
-- ![image](https://github.com/user-attachments/assets/57f7a253-2989-4d0c-9033-5e2a50525788)
+![image](https://github.com/user-attachments/assets/57f7a253-2989-4d0c-9033-5e2a50525788)
+
+*We can see that:
+1. At lower max_depth values (1-8), both the training and validation accuracies improve together, indicating that increasing the complexity of the tree helps the model better capture the patterns in the data without overfitting. 
+2. As the depth continues to increase (from 8 onwards), the training accuracy stays high (near 1.0), but the validation accuracy starts to decline slightly or plateaus. This is a classic sign of overfitting: the model is becoming too complex, fitting the noise in the training data rather than generalizing to unseen data.
+3. No Further Improvement Beyond Depth of 8: The best balance between training and validation performance is around a max_depth of 8. Beyond this point, deeper trees (max_depth values of 16, 32, etc.) do not provide any improvement to validation accuracy, and in fact, validation accuracy starts to decrease slightly, while training accuracy remains very high.
+
+![image](https://github.com/user-attachments/assets/e07145b7-2140-4c44-9fd9-bf3480507e34)
+
+*We can see that even though the initialized model allows up to 200 estimators, the algorithm only fit 95 estimators (over 95 rounds of training)
 
 
 ## Technologies Used
