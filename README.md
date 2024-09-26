@@ -39,8 +39,14 @@ The dataset used includes images of seven types of dry beans:
 ## Results
 
 - **Random Forest** and **Gradient Boosting** performed well, especially in handling the multi-class classification task.
+![image](https://github.com/user-attachments/assets/a53586d9-b37d-4e2f-9ced-47dde465a347)
+![image](https://github.com/user-attachments/assets/0b7cf11b-98b2-415a-8ce6-b910e2d59b2a)
+![image](https://github.com/user-attachments/assets/6ff64641-589a-40a4-8212-6a14797958a3)
+![image](https://github.com/user-attachments/assets/d231a94e-10cd-4c53-b0b0-64924cbde95b)
 - **Deep Learning** models using multi-layer perceptrons, combined with logistic regression, achieved further improvements in accuracy.
 - **Cross-validation** and **early stopping** were effective in preventing overfitting, resulting in a model that generalizes well to unseen data.
+- ![image](https://github.com/user-attachments/assets/57f7a253-2989-4d0c-9033-5e2a50525788)
+
 
 ## Technologies Used
 
